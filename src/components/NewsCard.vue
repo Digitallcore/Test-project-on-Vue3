@@ -3,10 +3,10 @@
     <div class="h-2/3">
       <a
         class="text-xl font-bold text-center text-green-800 hover:text-green-600 hover:underline" 
-        target="_blank"
+        target="blank"
         rel="noreferrer"
       >
-      <RouterLink :to="'/'+ post.slug">{{post.title}}</RouterLink>
+      <RouterLink :to= post.slug>{{post.title}}</RouterLink>
       </a>
       <img
         v-show="!!post.image > 0"
